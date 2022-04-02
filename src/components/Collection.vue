@@ -6,7 +6,7 @@
             <div class="flex items-center gap-5">
                 <div class="relative flex-none aspect-square bg-gray-200">
                     <img :src="image" alt="" class="w-20 h-20 object-cover rounded-xl">
-                    <div v-if="tick" class="absolute bottom-5 -right-[10px] w-[22px] h-[22px] rounded-1/2 bg-tick flex items-center justify-center">
+                    <div v-if=tick class="absolute bottom-5 -right-[10px] w-[22px] h-[22px] rounded-1/2 bg-tick flex items-center justify-center">
                         <img src="/images/image/collection-week/tick.svg" alt="">
                     </div>
                 </div>
@@ -30,7 +30,7 @@
             type:String
         },
         tick:{
-            type:Boolean
+            type:String
         }
 
 

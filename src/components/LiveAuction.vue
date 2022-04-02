@@ -2,16 +2,16 @@
     <a href="">
         <div class="border-gradient border-gradient-green font-barlow py-[30px] px-4 space-y-6">
             <div class="aspect-223/213 bg-gray-200">
-                <img src="/images/image/live-auction/live-auction1.png" alt="">
+                <img :src="image" alt="">
             </div>
-            <div class="border-1 rounded-xl py-3 px-5">
-                <span class="text-content-red font-medium">124 D :10 H :25 M :08 S</span>
+            <div class="border-1 rounded-xl py-3 px-5 text-center">
+                <span class="text-content-red font-medium">{{point}}</span>
             </div>
             <div class="font-semibold text-heading-md text-lg">
-                <span>Abstract cenious</span>
+                <span>{{title}}</span>
             </div>
             <div class="text-price-gray font-medium">
-                <span>Price : 3.45 ETH 10/10</span>
+                <span>{{price}}</span>
             </div>
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
@@ -31,15 +31,32 @@
                         <img src="/images/icons/icon-heart.svg" alt="">
                     </div>
                     <div class="text-heading-md">
-                        <span>126</span>
+                        <span>{{numbersLike}}</span>
                     </div>
                 </div>
             </div>
         </div>
     </a>
 </template>
-<script>
-   
+<script setup>
+    defineProps({
+        image:{
+            type:String
+        },
+        point:{
+            type:String
+        },
+        title:{
+            type:String
+        },
+        price:{
+            type:String
+        },
+        numbersLike:{
+            type:String
+        }
+
+   })
 </script>
 
 

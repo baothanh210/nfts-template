@@ -16,15 +16,15 @@
                 </div>
             </div>
             <div class="aspect-233/290 ">
-                <img src="/images/image/explore-more/explore-more1.png" alt="" class="rounded-md">
+                <img :src="image" alt="" class="rounded-md">
             </div>
             <div class="flex items-center justify-between">
                 <div>
                     <div class="font-semibold text-heading-md text-lg">
-                        <span>Walking On Air # 22</span>
+                        <span>{{title}}</span>
                     </div>
                     <div class="text-price-gray font-medium">
-                        <span>Open for bids 1/1</span>
+                        <span>{{info}}</span>
                     </div>
                 </div>
                 <div>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="border-1 rounded-xl py-3 px-5 flex items-center justify-between">
-                <span class="text-content-sm font-medium">110 ETH 12/14</span>
-                <span class="text-content-sm font-medium">Bid 80 ETH</span>
+                <span class="text-content-sm font-medium">{{code}}</span>
+                <span class="text-content-sm font-medium">{{code1}}</span>
             </div>
             <div class="flex items-center justify-between">
                 <div>
@@ -44,7 +44,7 @@
                         <img src="/images/icons/icon-heart.svg" alt="">
                     </div>
                     <div class="text-heading-md">
-                        <span>412</span>
+                        <span>{{numbersLike}}</span>
                     </div>
                 </div>
             </div>
@@ -53,5 +53,25 @@
 </template>
 
 <script setup>
+    defineProps({
+        image:{
+            type:String
+        },
+        title:{
+            type:String
+        },
+        info:{
+            type:String
+        },
+        code:{
+            type:String
+        },
+        code1:{
+            type:String
+        },
+        numbersLike:{
+            type:String 
+        }
 
+    })
 </script>

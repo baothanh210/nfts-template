@@ -43,10 +43,10 @@
                 <div class="flex flex-col lg:flex-row items-center ">
                     <div class="w-full lg:w-1/2 space-y-8">
                         <div class=" bg-[#CDEE69] bg-opacity-10 inline-block py-1 px-5">
-                            <span class="font-sansPro text-heading-md">LIMITED TIME</span>
+                            <span class="font-sansPro text-heading-md font-semibold">LIMITED TIME</span>
                         </div>
                         <div class="relative">
-                            <div class="font-barlow text-3xl md:text-6xl text-heading-md font-bold lg:max-w-122 ">
+                            <div class="font-barlow text-4xl md:text-6xl text-heading-md font-bold lg:max-w-122 ">
                                 <span class="leading-heading">Discover,Collect and Sell </span>
                             </div>
                             <div class="lg:absolute bottom-0 right-12 font-barlow text-6xl ">
@@ -99,9 +99,9 @@
         <section class="pb-30 font-barlow">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-10 pb-17">
-                    <span class="text-[44px] font-bold text-heading-md">Collection of The Week</span>
+                    <span class="text-4xl sm:text-[44px] font-bold text-heading-md">Collection of The Week</span>
                     
-                    <a href="" class="flex items-center gap-3 text-[29px] text-viewMore-md font-semibold">
+                    <a href="" class="flex items-center gap-3 text-xl sm:text-[29px] text-viewMore-md font-semibold">
                         View all Creator
                         <div class="w-6 pt-1">
                             <img src="/images/icons/icon-arrow.svg" alt="" class="w-full h-full object-cover">
@@ -109,14 +109,14 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
-                    <collection-item image="/images/image/collection-week/collect1.png" name="Boss Beauties" price="52.21 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect1.png" name="Boss Beauties" price="52.21 ETH" tick="checked"></collection-item>
                     <collection-item image="/images/image/collection-week/collect2.png" name="MutantCats" price="25.23 ETH"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect3.png" name="Worlds Women" price="32.22 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect3.png" name="Worlds Women" price="32.22 ETH" tick="checked"></collection-item>
                     <collection-item image="/images/image/collection-week/collect4.png" name="Galactic Apes" price="41.45 ETH"></collection-item>
                     <collection-item image="/images/image/collection-week/collect5.png" name="Neo Tokyo" price="43.67 ETH" ></collection-item>
-                    <collection-item image="/images/image/collection-week/collect6.png" name="SupDucks " price="20.26 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect6.png" name="SupDucks " price="20.26 ETH" tick="checked"></collection-item>
                     <collection-item image="/images/image/collection-week/collect7.png" name="MutantApe" price="38.27 ETH"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect8.png" name="Cool Cats" price="20.23 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect8.png" name="Cool Cats" price="20.23 ETH" tick="checked"></collection-item>
                 </div>
             </div>
         </section>
@@ -124,9 +124,9 @@
         <section class="pb-30 font-barlow">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-10 pb-17">
-                    <span class="text-[44px] font-semibold text-heading-md">Live Aution</span>
+                    <span class="text-4xl sm:text-[44px] font-semibold text-heading-md">Live Auction</span>
                     
-                    <a href="" class="flex items-center gap-3 text-[29px] text-viewMore-md font-semibold">
+                    <a href="" class="flex items-center gap-3 text-xl sm:text-[29px] text-viewMore-md font-semibold">
                         View all
                         <div class="w-6 pt-1">
                             <img src="/images/icons/icon-arrow.svg" alt="" class="w-full h-full object-cover">
@@ -134,10 +134,14 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <live-auction-item></live-auction-item>
-                    <live-auction-item></live-auction-item>
-                    <live-auction-item></live-auction-item>
-                    <live-auction-item></live-auction-item>
+                    <live-auction-item image="/images/image/live-auction/live-auction1.png" point="124 D :10 H :25 M :08 S"
+                    title="Abstract cenious" price="Price : 3.45 ETH 10/10"></live-auction-item>
+                    <live-auction-item image="/images/image/live-auction/live-auction2.png" point="124 D :10 H :25 M :08 S"
+                    title="Angry Animal" price="Price : 3.45 ETH 10/10"></live-auction-item>
+                    <live-auction-item image="/images/image/live-auction/live-auction3.png" point="124 D :10 H :25 M :08 S"
+                    title="Exe Dream Hight" price="Price : 3.45 ETH 10/10"></live-auction-item>
+                    <live-auction-item image="/images/image/live-auction/live-auction4.png" point="124 D :10 H :25 M :08 S"
+                    title="Dark-light Angel" price="Price : 3.45 ETH 10/10"></live-auction-item>
 
                 </div>
 
@@ -190,9 +194,12 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-                    <explore-more-item></explore-more-item>
-                    <explore-more-item></explore-more-item>
-                    <explore-more-item></explore-more-item>
+                    <explore-more-item image="/images/image/explore-more/explore-more1.png" title="Walking On Air # 22" info="Open for bids 1/1"
+                    code="110 ETH 12/14" code1="Bid 80 ETH" numbersLike="412"></explore-more-item>
+                    <explore-more-item image="/images/image/explore-more/explore-more2.png" title="xox3 nindo # 61" info="Open for bids 1/1"
+                    code="110 ETH 12/14" code1="Bid 80 ETH" numbersLike="356"></explore-more-item>
+                    <explore-more-item image="/images/image/explore-more/explore-more3.png" title="Logical Impact # 34" info="Open for bids 1/1"
+                    code="110 ETH 12/14" code1="Bid 80 ETH" numbersLike="312"></explore-more-item>
                 </div>
             </div>
         </section>
@@ -201,8 +208,8 @@
         <section class="pb-30 font-barlow">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-10 pb-17">
-                    <span class="text-[44px] font-semibold text-heading-md">Popular collection</span>
-                    <a href="" class="flex items-center gap-3 text-[29px] text-viewMore-md font-semibold">
+                    <span class="text-4xl sm:text-[44px] font-semibold text-heading-md">Popular collection</span>
+                    <a href="" class="flex items-center gap-3 text-xl sm:text-[29px] text-viewMore-md font-semibold">
                         View all 
                         <div class="w-6 pt-1">
                             <img src="/images/icons/icon-arrow.svg" alt="" class="w-full h-full object-cover">
@@ -222,12 +229,12 @@
         <section class="pb-30 font-barlow">
             <div class="container">
                 <div class="pb-17">
-                    <span class="text-[44px] font-semibold text-heading-md">How it works</span>
+                    <span class="text-4xl sm:text-[44px] font-semibold text-heading-md">How it works</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <how-it-work-item></how-it-work-item>
-                    <how-it-work-item></how-it-work-item>
-                    <how-it-work-item></how-it-work-item>
+                    <how-it-work-item image="images/image/how-it-works/icon-wallet.svg" title="Set Up Wallet" content="Set up your wallet and then you can create, sell & collect  NFTs at Ethoz and add nfts   >>"></how-it-work-item>
+                    <how-it-work-item image="images/image/how-it-works/icon-add.svg" title="Add Your NFTs" content="After setting up your wallet, you can add your NFTs on Ethoz And mind set for Selling   >>"></how-it-work-item>
+                    <how-it-work-item image="images/image/how-it-works/icon-money.svg" title="Sell Your NFTs" content="After adding your NFTs, you can list your NFTs for sale and and take reward for products >>"></how-it-work-item>  
                 </div>
             </div>
         </section>
@@ -249,6 +256,16 @@
         <div class="container pb-20">
             <footer-cp></footer-cp>
         </div>
+        
+        <!-- bgEffect  -->
+        <div class="bg-effect-yellow"></div>
+        <div class="bg-effect-green"></div>
+        <div class="bg-effect-gray"></div>
+        <div class="bg-effect-yellow2"></div>
+        <div class="bg-effect-green2"></div>
+        <div class="bg-effect-yellow3"></div>
+        <div class="bg-effect-green3"></div>
+
     </div>
    
 </template>
