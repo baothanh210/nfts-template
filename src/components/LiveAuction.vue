@@ -1,6 +1,6 @@
 <template>
     <a href="">
-        <div class="border-1 rounded-xl font-barlow py-[30px] px-4 space-y-6">
+        <div class="border-gradient border-gradient-green font-barlow py-[30px] px-4 space-y-6">
             <div class="aspect-223/213 bg-gray-200">
                 <img src="/images/image/live-auction/live-auction1.png" alt="">
             </div>
@@ -39,4 +39,8 @@
     </a>
 </template>
 <script>
+   
 </script>
+
+
+

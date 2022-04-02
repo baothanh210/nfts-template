@@ -12,7 +12,7 @@
                         <span class="text-[26px] font-semibold">Nfts</span>
                     </a>
                     <!-- Nav -->
-                    <nav class="order-3 md:order-2 font-sansPro text-[17px]">
+                    <nav class="order-3 md:order-2 font-sansPro font-semibold text-[17px]">
                         <ul class="flex items-center gap-12">
                             <li><a href="">Explore</a></li>
                             <li><a href="">Featured Art</a></li>
@@ -109,22 +109,22 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
-                    <collection-item></collection-item>
+                    <collection-item image="/images/image/collection-week/collect1.png" name="Boss Beauties" price="52.21 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect2.png" name="MutantCats" price="25.23 ETH"></collection-item>
+                    <collection-item image="/images/image/collection-week/collect3.png" name="Worlds Women" price="32.22 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect4.png" name="Galactic Apes" price="41.45 ETH"></collection-item>
+                    <collection-item image="/images/image/collection-week/collect5.png" name="Neo Tokyo" price="43.67 ETH" ></collection-item>
+                    <collection-item image="/images/image/collection-week/collect6.png" name="SupDucks " price="20.26 ETH" tick=true></collection-item>
+                    <collection-item image="/images/image/collection-week/collect7.png" name="MutantApe" price="38.27 ETH"></collection-item>
+                    <collection-item image="/images/image/collection-week/collect8.png" name="Cool Cats" price="20.23 ETH" tick=true></collection-item>
                 </div>
             </div>
         </section>
         <!-- Live Auction -->
-        <section class="pb-30">
+        <section class="pb-30 font-barlow">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-10 pb-17">
-                    <span class="text-[44px] font-bold text-heading-md">Live Aution</span>
+                    <span class="text-[44px] font-semibold text-heading-md">Live Aution</span>
                     
                     <a href="" class="flex items-center gap-3 text-[29px] text-viewMore-md font-semibold">
                         View all
@@ -145,10 +145,10 @@
         </section>
 
         <!-- Explore More -->
-        <section class="pb-30">
+        <section class="pb-30 font-barlow">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-10 pb-17 font-barlow text-heading-md">
-                    <span class="text-4xl sm:text-[44px] font-bold text-heading-md">Explore More</span>
+                    <span class="text-4xl sm:text-[44px] font-semibold text-heading-md">Explore More</span>
                     <div class="flex flex-wrap items-center gap-8">
                         <div class="bg-heading-md text-white rounded-md">
                             <a class="block py-3 px-4 font-semibold " href="">View all</a>
@@ -189,8 +189,66 @@
                         </div>
                     </div>
                 </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                    <explore-more-item></explore-more-item>
+                    <explore-more-item></explore-more-item>
+                    <explore-more-item></explore-more-item>
+                </div>
             </div>
         </section>
+
+        <!-- Popular collection -->
+        <section class="pb-30 font-barlow">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-10 pb-17">
+                    <span class="text-[44px] font-semibold text-heading-md">Popular collection</span>
+                    <a href="" class="flex items-center gap-3 text-[29px] text-viewMore-md font-semibold">
+                        View all 
+                        <div class="w-6 pt-1">
+                            <img src="/images/icons/icon-arrow.svg" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <popular-collect-item avatar="/images/image/popular-collection/img-popular1.png" name="Hash masks" code="ETH-11627" numbersLike="213" image="/images/image/popular-collection/img-popular2.png" image1="/images/image/popular-collection/img-popular3.png" image2="/images/image/popular-collection/img-popular4.png" image3="/images/image/popular-collection/img-popular5.png" title="Artistic collection"></popular-collect-item>
+                    <popular-collect-item avatar="/images/image/popular-collection/img1-popular1.png" name="Robin jon" code="ETH-11627" numbersLike="112" image="/images/image/popular-collection/img1-popular2.png" image1="/images/image/popular-collection/img1-popular3.png" image2="/images/image/popular-collection/img1-popular4.png" image3="/images/image/popular-collection/img1-popular5.png" title="Abstract collection"></popular-collect-item>
+                    <popular-collect-item avatar="/images/image/popular-collection/img2-popular1.png" name="Hash masks" code="ETH-11627" numbersLike="216" image="/images/image/popular-collection/img2-popular2.png" image1="/images/image/popular-collection/img2-popular3.png" image2="/images/image/popular-collection/img2-popular4.png" image3="/images/image/popular-collection/img2-popular5.png" title="Sketch collection"></popular-collect-item>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="pb-30 font-barlow">
+            <div class="container">
+                <div class="pb-17">
+                    <span class="text-[44px] font-semibold text-heading-md">How it works</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <how-it-work-item></how-it-work-item>
+                    <how-it-work-item></how-it-work-item>
+                    <how-it-work-item></how-it-work-item>
+                </div>
+            </div>
+        </section>
+        <!-- Get start -->
+        <section class="pb-30 font-barlow">
+            <div class="container">
+                <div class="bg-getStarted text-center mx-auto space-y-11 py-17 lg:mx-30">
+                    <div class=" max-w-130 mx-auto">
+                        <span class="font-semibold text-heading-md text-2xl sm:text-4xl leading-12">Get the only wallet  and explore the world of NFTs now</span>
+                    </div>
+                    <div style="box-shadow:2px 2px" class="bg-[#3FF861] inline-block rounded-md">
+                        <a href="" class="block font-semibold text-heading-md py-4 px-10 text-lg">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="container pb-20">
+            <footer-cp></footer-cp>
+        </div>
     </div>
    
 </template>
@@ -201,7 +259,10 @@
 import bannerImg from '../components/Banner.vue'
 import collectionItem from '../components/Collection.vue'
 import liveAuctionItem from '../components/LiveAuction.vue'
-
+import exploreMoreItem from '../components/ExploreMore.vue'
+import popularCollectItem from '../components/Popular.vue' 
+import howItWorkItem from '../components/HowItWork.vue'
+import footerCp from '../components/Footer.vue'
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
@@ -213,34 +274,6 @@ import { EffectCards } from "swiper";
 const modules = [EffectCards]
   
 </script>
-<style>
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.bg-linear{
-    background: linear-gradient(91.66deg, #88FFFB 7.72%, #7DFE95 99.26%);
-}
-.text-tothe {
-    background: linear-gradient(90deg, #57FAF4 0%, #46FEF7 0.01%, #18FF43 113.59%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1.5px;
-    background-clip: text;
-    text-fill-color: transparent;
-
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-
-}
-.leading-heading{
-    line-height: 85px !important;
-}
-
+<style lang="scss">
+    @import '../assets/scss/style';
 </style>
