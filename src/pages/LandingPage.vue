@@ -1,38 +1,50 @@
 <template >
     <!-- Header -->
     <div class="relative overflow-hidden">
-        <section class="pt-7 lg:pt-19 pb-10 md:pb-25" >
+        <section class=" pt-7 lg:pt-19 pb-10 md:pb-25" >
             <div class="container">
-                <header class=" flex flex-wrap items-center gap-5 text-heading-md  justify-between font-barlow">
-                    <!-- Logo -->
-                    <a href="" class="flex items-center font-barlow gap-3">
-                        <div class="">
-                            <img src="/images/logos/logo-nft.svg" alt="" class="">
-                        </div>
-                        <span class="text-[26px] font-semibold">Nfts</span>
-                    </a>
+                <header class=" flex flex-col lg:flex-row items-center gap-5 text-heading-md justify-between font-barlow">
+                    <div class="flex items-center justify-between w-full lg:w-auto">
+                        <!-- Logo -->
+                        <a href="" class=" flex items-center font-barlow gap-3 ">
+                            <div class="">
+                                <img src="/images/logos/logo-nft.svg" alt="" class="">
+                            </div>
+                            <span class="text-[26px] font-semibold">Nfts</span>
+                        </a>
+
+                        <button @click="isOpen" class="lg:hidden w-7 h-7">
+                            <img src="/images/icons/menu-btn.svg" alt="" class="object-cover">
+                        </button>
+                    </div>
                     <!-- Nav -->
-                    <nav class="order-3 md:order-2 font-sansPro font-semibold text-[17px]">
-                        <ul class="flex items-center gap-12">
-                            <li><a href="">Explore</a></li>
-                            <li><a href="">Featured Art</a></li>
-                            <li><a href="">Activity</a></li>
+                    <nav class="font-sansPro font-semibold text-[17px]">
+                        <ul class=" menuMobile flex flex-col lg:flex-row items-center gap-12 -left-full w-0 lg:left-auto lg:w-auto fixed lg:relative duration-600 z-50 ">
+                            <button @click="isOpen" class="lg:hidden w-7 h-7 ml-auto mr-3 mt-6">
+                                <img src="/images/icons/icon-close-menu.svg" alt="" class="object-cover">
+                            </button>
+                            <li v-for="(link,index) in linksHeader" :key="index">
+                                <a href="">
+                                    {{link}}
+                                </a>
+                            </li>
+                            <div class="flex items-center gap-4 md:gap-9 lg:pl-60 ">
+                                <div class=" bg-[#404040] rounded-md">
+                                    <a href="" class="flex items-center text-white flex items-center gap-2 py-4 px-4 md:px-9 ">
+                                        <img src="/images/icons/icon-upload.svg" alt="">
+                                        <span class="font-semibold">Upload</span>
+                                    </a>
+                                </div>
+                                <div style="box-shadow:2px 2px" class="text-heading-md border-1 border-[#404040] rounded-md font-semibold text-lg">
+                                    <a href="" class="flex items-centerflex items-center gap-2 py-2 px-4 md:py-4 md:px-10 ">
+                                        <span>Sign Up</span>
+                                    </a>
+                                </div>
+                            </div>
                         </ul>
                     </nav>
                     <!-- sec3 -->
-                    <div class="order-2 md:order-3 flex items-center gap-4 md:gap-9 ">
-                        <div class=" bg-[#404040] rounded-md">
-                            <a href="" class="flex items-center text-white flex items-center gap-2 py-2 px-4 md:py-4 md:px-9 ">
-                                <img src="/images/icons/icon-upload.svg" alt="">
-                                <span class="font-semibold">Upload</span>
-                            </a>
-                        </div>
-                        <div style="box-shadow:2px 2px" class="text-heading-md border-1 border-[#404040] rounded-md font-semibold text-lg">
-                            <a href="" class="flex items-centerflex items-center gap-2 py-2 px-4 md:py-4 md:px-10 ">
-                                <span>Sign Up</span>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </header>
             </div>
             
@@ -43,18 +55,18 @@
                 <div class="flex flex-col lg:flex-row items-center ">
                     <div class="w-full lg:w-1/2 space-y-8">
                         <div class=" bg-[#CDEE69] bg-opacity-10 inline-block py-1 px-5">
-                            <span class="font-sansPro text-heading-md font-semibold">LIMITED TIME</span>
+                            <span class="font-sansPro text-heading-md font-semibold">{{headingData.limited}}</span>
                         </div>
                         <div class="relative">
                             <div class="font-barlow text-4xl md:text-6xl text-heading-md font-bold lg:max-w-122 ">
-                                <span class="leading-10 lg:leading-20">Discover,Collect and Sell </span>
+                                <span class="leading-10 lg:leading-20">{{headingData.heading}} </span>
                             </div>
                             <div class="lg:absolute bottom-0 right-12 font-barlow text-6xl ">
-                                <span class="text-tothe text-5xl md:text-6xl font-extrabold leading-10 lg:leading-20">NFT ASSETS</span>
+                                <span class="text-tothe text-5xl md:text-6xl font-extrabold leading-10 lg:leading-20">{{headingData.headingHightLight}}</span>
                             </div>
                         </div>
                         <div class="font-sansPro text-lg text-content-sm ">
-                            <span>Digital Marketplace For Crypto Collectibles And Non-Fungible Tokens. Buy, Sell, And Discover Exclusive Digital AssetsUnit of data stored on a digital ledger, called a blockchain.</span>
+                            <span>{{headingData.content}}.</span>
                         </div>
                         <div class="flex flex-col sm:flex-row gap-[30px]">
                             <div style="box-shadow:2px 2px" class="flex  bg-linear font-barlow text-heading-sm border-1 border-[#404040] rounded-md font-semibold text-lg">
@@ -75,7 +87,6 @@
                     </div>
                     <!-- Slider Img -->
                     <div class="pt-10 lg:pt-0 lg:pl-10 w-full lg:w-1/2">
-                  
                         <swiper
                                 :effect="'cards'"
                                 :grabCursor="true"
@@ -244,6 +255,8 @@
 </template>
 
 <script setup>
+import { reactive } from 'vue'
+import {useIsOpen} from '../composables/mobileMenu'
 // Import Swiper Vue.js components
 import bannerImg from '../components/Banner.vue'
 import collectionItem from '../components/Collection.vue'
@@ -259,8 +272,20 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper";
 const modules = [EffectCards]
+const headingData = reactive({
+    limited:'LIMITED TIME',
+    heading:'Discover,Collect and Sell',
+    headingHightLight:'NFT ASSETS',
+    content:'Digital Marketplace For Crypto Collectibles And Non-Fungible Tokens. Buy, Sell, And Discover Exclusive Digital AssetsUnit of data stored on a digital ledger, called a blockchain'
+})
 
+const linksHeader = reactive([
+    'Explore',
+    'Featured Art',
+    'Activity'
+])
 
+const isOpen = useIsOpen
 </script>
 <style lang="scss">
     @import '../assets/scss/style';
