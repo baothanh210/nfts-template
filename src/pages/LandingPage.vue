@@ -44,6 +44,7 @@
                     <div class="w-full lg:w-1/2 space-y-8">
                         <div class=" bg-[#CDEE69] bg-opacity-10 inline-block py-1 px-5">
                             <span class="font-sansPro text-heading-md font-semibold">LIMITED TIME</span>
+                            
                         </div>
                         <div class="relative">
                             <div class="font-barlow text-4xl md:text-6xl text-heading-md font-bold lg:max-w-122 ">
