@@ -123,17 +123,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <live-auction-item image="/images/image/live-auction/live-auction1.png" point="124 D :10 H :25 M :08 S"
-                    title="Abstract cenious" price="Price : 3.45 ETH 10/10"></live-auction-item>
-                    <live-auction-item image="/images/image/live-auction/live-auction2.png" point="124 D :10 H :25 M :08 S"
-                    title="Angry Animal" price="Price : 3.45 ETH 10/10"></live-auction-item>
-                    <live-auction-item image="/images/image/live-auction/live-auction3.png" point="124 D :10 H :25 M :08 S"
-                    title="Exe Dream Hight" price="Price : 3.45 ETH 10/10"></live-auction-item>
-                    <live-auction-item image="/images/image/live-auction/live-auction4.png" point="124 D :10 H :25 M :08 S"
-                    title="Dark-light Angel" price="Price : 3.45 ETH 10/10"></live-auction-item>
-
-                </div>
+                <live-auction-item></live-auction-item>
 
             </div>
         </section>
@@ -183,14 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-                    <explore-more-item image="/images/image/explore-more/explore-more1.png" title="Walking On Air # 22" info="Open for bids 1/1"
-                    code="110 ETH 12/14" code1="Bid 80 ETH" numbersLike="412"></explore-more-item>
-                    <explore-more-item image="/images/image/explore-more/explore-more2.png" title="xox3 nindo # 61" info="Open for bids 1/1"
-                    code="110 ETH 12/14" code1="Bid 80 ETH" numbersLike="356"></explore-more-item>
-                    <explore-more-item image="/images/image/explore-more/explore-more3.png" title="Logical Impact # 34" info="Open for bids 1/1"
-                    code="110 ETH 12/14" code1="Bid 80 ETH" numbersLike="312"></explore-more-item>
-                </div>
+                <explore-more-item></explore-more-item>
             </div>
         </section>
 
