@@ -3,15 +3,10 @@
     <a v-for="(itemExplore,index) in exploreMoreItems " :key="index" href="">
         <div class="border-gradient border-gradient-green rounded-xl font-barlow py-[30px] px-4 space-y-6">
             <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <div class="w-11 h-11 rounded-1/2 bg-white flex items-center justify-center">
+                <div class="pl-4 flex items-center">
+                    <div v-for="(avatarUser,index) in itemExplore.avatarUsers" :key="index" class="-ml-4 w-11 h-11 rounded-1/2 bg-white flex items-center justify-center">
                         <div class="w-[30px] h-[30px] rounded-1/2 flex items-center justify-center overflow-hidden">
-                            <img src="/images/image/live-auction/icon-bg1.png" alt="" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="-ml-4 w-11 h-11 rounded-1/2 bg-white flex items-center justify-center">
-                        <div class="w-[30px] h-[30px] rounded-1/2 flex items-center justify-center overflow-hidden">
-                            <img src="/images/image/live-auction/icon-bg1.png" alt="" class="w-full h-full object-cover">
+                            <img :src="avatarUser" alt="" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -63,7 +58,13 @@
             info:"Open for bids 1/1",
             code:"110 ETH 12/14",
             code1:"Bid 80 ETH",
-            numbersLike:"412"
+            numbersLike:"412",
+            avatarUsers:[
+                '/images/image/live-auction/icon-bg4.png',
+                '/images/image/live-auction/icon-bg5.png',
+                '/images/image/live-auction/icon-bg1.png',
+
+            ]
         },
         {
             image:"/images/image/explore-more/explore-more2.png",
@@ -71,7 +72,13 @@
             info:"Open for bids 1/1",
             code:"110 ETH 12/14",
             code1:"Bid 80 ETH",
-            numbersLike:"412"
+            numbersLike:"412",
+            avatarUsers:[
+                '/images/image/live-auction/icon-bg3.png',
+                '/images/image/live-auction/icon-bg2.png',
+                '/images/image/live-auction/icon-bg1.png',
+
+            ]
         },
         {
             image:"/images/image/explore-more/explore-more3.png",
@@ -79,7 +86,11 @@
             info:"Open for bids 1/1",
             code:"110 ETH 12/14",
             code1:"Bid 80 ETH",
-            numbersLike:"412"
+            numbersLike:"412",
+            avatarUsers:[
+                '/images/image/live-auction/icon-bg2.png',
+                '/images/image/live-auction/icon-bg5.png',
+            ]
         }
 
     ])
