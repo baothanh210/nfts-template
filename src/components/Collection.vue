@@ -1,26 +1,26 @@
 <template> 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
-        <a v-for="(collect,index) in collectionImg " :key="index" href="" class="">
-            <div class="border-gradient border-gradient-purple pt-5 pb-6 px-5 font-barlow">
-                <div  class="flex items-center gap-5">
-                    <div class="relative flex-none aspect-square bg-gray-200">
-                        <img :src="collect.image" alt="" class="w-20 h-20 object-cover rounded-xl">
-                        <div v-if=collect.tick class="absolute bottom-5 -right-[10px] w-[22px] h-[22px] rounded-1/2 bg-tick flex items-center justify-center">
-                            <img src="/images/image/collection-week/tick.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <span class="text-heading-md font-semibold">{{collect.name}}</span>
-                        <span class="text-content-red text-sm font-semibold">{{collect.price}}</span>
+    
+    <a v-for="(collect,index) in collectionImg " :key="index" href="" class="">
+        <div class="border-gradient border-gradient-purple pt-5 pb-6 px-5 font-barlow">
+            <div  class="flex items-center gap-5">
+                <div class="relative flex-none aspect-square bg-gray-200">
+                    <img :src="collect.image" alt="" class="w-20 h-20 object-cover rounded-xl">
+                    <div v-if=collect.tick class="absolute bottom-5 -right-[10px] w-[22px] h-[22px] rounded-1/2 bg-tick flex items-center justify-center">
+                        <img src="/images/image/collection-week/tick.svg" alt="">
                     </div>
                 </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-heading-md font-semibold">{{collect.name}}</span>
+                    <span class="text-content-red text-sm font-semibold">{{collect.price}}</span>
+                </div>
             </div>
-        </a>
-    </div>
+        </div>
+    </a>
+   
 </template>
 <script setup>
     import {ref,reactive} from 'vue'
-    const collectionImg = ([
+    const collectionImg = reactive([
         {
             image:'/images/image/collection-week/collect1.png',
             name:"Boss Beauties",

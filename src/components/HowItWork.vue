@@ -1,17 +1,17 @@
 <template>
-    <a href="">
+    <a v-for="(item,index) in howItWorks" :key="index" href="">
         <div class="border-gradient border-gradient-green rounded-md">
             <div class=" py-16 px-12 h-full">
                 <div class="flex items-center gap-5">
                     <div>
-                        <img :src="image" alt="">
+                        <img :src="item.image" alt="">
                     </div>
                     <div class="text-heading-md font-bold text-2xl">
-                        <span>{{title}}</span>
+                        <span>{{item.title}}</span>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <span>{{content}}</span>
+                    <span>{{item.content}}</span>
                 </div>
                 
             </div>
@@ -20,16 +20,22 @@
 </template>
 
 <script setup>
-    defineProps({
-        image:{
-            type:String
+    import { reactive } from 'vue';
+    const howItWorks = reactive([
+        {
+            image:"images/image/how-it-works/icon-wallet.svg",
+            title:"Set Up Wallet",
+            content:"Set up your wallet and then you can create, sell & collect  NFTs at Ethoz and add nfts   >>"
         },
-        title:{
-            type:String
+        {
+            image:"images/image/how-it-works/icon-add.svg",
+            title:"Set Up Wallet",
+            content:"Set up your wallet and then you can create, sell & collect  NFTs at Ethoz and add nfts   >>"
         },
-        content:{
-            type:String
+        {
+            image:"images/image/how-it-works/icon-money.svg",
+            title:"Set Up Wallet",
+            content:"Set up your wallet and then you can create, sell & collect  NFTs at Ethoz and add nfts   >>"
         }
-    })
-
+    ])
 </script>

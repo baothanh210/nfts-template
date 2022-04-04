@@ -107,7 +107,9 @@
                         </div>
                     </a>
                 </div>
-                <collection-item></collection-item>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
+                    <collection-item></collection-item>
+                </div>
             </div>
         </section>
         <!-- Live Auction -->
@@ -123,8 +125,9 @@
                         </div>
                     </a>
                 </div>
-                <live-auction-item></live-auction-item>
-
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <live-auction-item></live-auction-item>
+                </div>
             </div>
         </section>
 
@@ -173,7 +176,9 @@
                         </div>
                     </div>
                 </div>
-                <explore-more-item></explore-more-item>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                    <explore-more-item></explore-more-item>
+                </div>
             </div>
         </section>
 
@@ -190,10 +195,7 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <popular-collect-item avatar="/images/image/popular-collection/img-popular1.png" name="Hash masks" code="ETH-11627" numbersLike="213" image="/images/image/popular-collection/img-popular2.png" image1="/images/image/popular-collection/img-popular3.png" image2="/images/image/popular-collection/img-popular4.png" image3="/images/image/popular-collection/img-popular5.png" title="Artistic collection"></popular-collect-item>
-                    <popular-collect-item avatar="/images/image/popular-collection/img1-popular1.png" name="Robin jon" code="ETH-11627" numbersLike="112" image="/images/image/popular-collection/img1-popular2.png" image1="/images/image/popular-collection/img1-popular3.png" image2="/images/image/popular-collection/img1-popular4.png" image3="/images/image/popular-collection/img1-popular5.png" title="Abstract collection"></popular-collect-item>
-                    <popular-collect-item avatar="/images/image/popular-collection/img2-popular1.png" name="Hash masks" code="ETH-11627" numbersLike="216" image="/images/image/popular-collection/img2-popular2.png" image1="/images/image/popular-collection/img2-popular3.png" image2="/images/image/popular-collection/img2-popular4.png" image3="/images/image/popular-collection/img2-popular5.png" title="Sketch collection"></popular-collect-item>
-
+                    <popular-collect-item></popular-collect-item>
                 </div>
             </div>
         </section>
@@ -205,9 +207,7 @@
                     <span class="text-4xl sm:text-[44px] font-semibold text-heading-md">How it works</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <how-it-work-item image="images/image/how-it-works/icon-wallet.svg" title="Set Up Wallet" content="Set up your wallet and then you can create, sell & collect  NFTs at Ethoz and add nfts   >>"></how-it-work-item>
-                    <how-it-work-item image="images/image/how-it-works/icon-add.svg" title="Add Your NFTs" content="After setting up your wallet, you can add your NFTs on Ethoz And mind set for Selling   >>"></how-it-work-item>
-                    <how-it-work-item image="images/image/how-it-works/icon-money.svg" title="Sell Your NFTs" content="After adding your NFTs, you can list your NFTs for sale and and take reward for products >>"></how-it-work-item>  
+                    <how-it-work-item></how-it-work-item>
                 </div>
             </div>
         </section>

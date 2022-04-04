@@ -32,34 +32,20 @@
                     </svg>
                 </a>
                 <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md ">
-                    <svg class="icon-twitter">
-                        <use xlink:href="../assets/sprite-svg-icons.svg#icon-twitter"></use>
+                    <svg class="icon-in">
+                        <use xlink:href="../assets/sprite-svg-icons.svg#icon-in"></use>
                     </svg>
                 </a>
             </div>
         </div>
-        <div class="flex-1 space-y-7">
+        <div v-for="(section,index) in listInfoFooter" :key="index" class="flex-1 space-y-7">
             <div class="text-2xl font-semibold text-heading-md">
-                <span>NFT Marketplace</span>
+                <span>{{section.title}}</span>
             </div>
-            <div class="font-regular text-content-sm text-lg leading-8">
-                <a class="block" href="">Sell your assets</a>
-                <a class="block" href="">FAQ</a>
-                <a class="block" href="">Support</a>
-                <a class="block" href="">Privacy/Policy</a>
-                <a class="block" href="">Your purchases</a>
-            </div>
-        </div>
-        <div class="flex-1 space-y-7">
-            <div class="text-2xl font-semibold text-heading-md">
-                <span>Community</span>
-            </div>
-            <div class="font-regular text-content-sm text-lg leading-8">
-                <a class="block" href="">NFT Token</a>
-                <a class="block" href="">Discusion</a>
-                <a class="block" href="">Voting</a>
-                <a class="block" href="">Suggest Feature</a>
-                <a class="block" href="">Language</a>
+            <div  class="font-regular text-content-sm text-lg leading-8">
+                <a v-for="(link,i) in section.links" :key="i" class="block" href="">
+                    {{link}}
+                </a>
             </div>
         </div>
         <div class="flex-1 space-y-7">
@@ -86,7 +72,32 @@
     </div>
 </template>
 
-<script>
+<script setup>
+    import {reactive} from 'vue'
+    const listInfoFooter = reactive([
+       
+        {
+            title:'NFT Marketplace',
+            links:[
+                'Sell your assets',
+                'FAQ',
+                'Support',
+                'Privacy/Policy',
+                'Your purchases',
+            ]
+        },
+        {
+            title:'Community',
+            links:[
+                'NFT Token',
+                'Discusion',
+                'Voting',
+                'Suggest Feature',
+                'Language',
+            ]
+        },
+      
+    ])
 </script>
 <style>
     
