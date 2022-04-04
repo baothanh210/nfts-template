@@ -16,16 +16,25 @@
             </div>
             <div class="flex items-center gap-4">
                 <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md ">
-                    <img src="/images/icons/icon-fb.svg" alt="">
+                    <svg class="icon-fb">
+                        <use xlink:href="../assets/sprite-svg-icons.svg#icon-fb"></use>
+                    </svg>
                 </a>
-                <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md">
-                    <img src="/images/icons/icon-insta.svg" alt="">
+                
+                <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md ">
+                    <svg class="icon-insta">
+                        <use xlink:href="../assets/sprite-svg-icons.svg#icon-insta"></use>
+                    </svg>
                 </a>
-                <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md">
-                    <img src="/images/icons/icon-twitter.svg" alt="">
-                </a> 
-                <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md">
-                    <img src="/images/icons/icon-in.svg" alt="">
+                <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md ">
+                    <svg class="icon-twitter">
+                        <use xlink:href="../assets/sprite-svg-icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a href="" class="icon-hover w-8 h-8 rounded-1/2 flex items-center justify-center shadow-md ">
+                    <svg class="icon-twitter">
+                        <use xlink:href="../assets/sprite-svg-icons.svg#icon-twitter"></use>
+                    </svg>
                 </a>
             </div>
         </div>

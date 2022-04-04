@@ -44,14 +44,13 @@
                     <div class="w-full lg:w-1/2 space-y-8">
                         <div class=" bg-[#CDEE69] bg-opacity-10 inline-block py-1 px-5">
                             <span class="font-sansPro text-heading-md font-semibold">LIMITED TIME</span>
-                            
                         </div>
                         <div class="relative">
                             <div class="font-barlow text-4xl md:text-6xl text-heading-md font-bold lg:max-w-122 ">
-                                <span class="leading-heading">Discover,Collect and Sell </span>
+                                <span class="leading-10 lg:leading-20">Discover,Collect and Sell </span>
                             </div>
                             <div class="lg:absolute bottom-0 right-12 font-barlow text-6xl ">
-                                <span class="text-tothe text-5xl md:text-6xl font-extrabold leading-heading">NFT ASSETS</span>
+                                <span class="text-tothe text-5xl md:text-6xl font-extrabold leading-10 lg:leading-20">NFT ASSETS</span>
                             </div>
                         </div>
                         <div class="font-sansPro text-lg text-content-sm ">
@@ -108,16 +107,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
-                    <collection-item image="/images/image/collection-week/collect1.png" name="Boss Beauties" price="52.21 ETH" tick="checked"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect2.png" name="MutantCats" price="25.23 ETH"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect3.png" name="Worlds Women" price="32.22 ETH" tick="checked"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect4.png" name="Galactic Apes" price="41.45 ETH"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect5.png" name="Neo Tokyo" price="43.67 ETH" ></collection-item>
-                    <collection-item image="/images/image/collection-week/collect6.png" name="SupDucks " price="20.26 ETH" tick="checked"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect7.png" name="MutantApe" price="38.27 ETH"></collection-item>
-                    <collection-item image="/images/image/collection-week/collect8.png" name="Cool Cats" price="20.23 ETH" tick="checked"></collection-item>
-                </div>
+                <collection-item></collection-item>
             </div>
         </section>
         <!-- Live Auction -->
@@ -272,7 +262,6 @@
 
 <script setup>
 // Import Swiper Vue.js components
-
 import bannerImg from '../components/Banner.vue'
 import collectionItem from '../components/Collection.vue'
 import liveAuctionItem from '../components/LiveAuction.vue'
@@ -281,15 +270,14 @@ import popularCollectItem from '../components/Popular.vue'
 import howItWorkItem from '../components/HowItWork.vue'
 import footerCp from '../components/Footer.vue'
 import { Swiper, SwiperSlide } from "swiper/vue";
-
 // Import Swiper styles
 import "swiper/css";
-
 import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper";
 const modules = [EffectCards]
-  
+
+
 </script>
 <style lang="scss">
     @import '../assets/scss/style';
