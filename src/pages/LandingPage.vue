@@ -71,7 +71,6 @@
                                     <span class="w-full text-center">Connect Wallet</span>
                                 </a>
                             </div>
-                            
                         </div>
                     </div>
                     <!-- Slider Img -->
