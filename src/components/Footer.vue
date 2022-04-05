@@ -74,7 +74,7 @@
 
 <script setup>
     import {reactive} from 'vue'
-    const listInfoFooter = reactive([
+    const listInfoFooter = [
        
         {
             title:'NFT Marketplace',
@@ -97,7 +97,7 @@
             ]
         },
       
-    ])
+    ]
 </script>
 <style>
     

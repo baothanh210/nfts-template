@@ -51,7 +51,7 @@
 
 <script setup>
     import {reactive} from 'vue'
-    const exploreMoreItems = reactive([
+    const exploreMoreItems = [
         {
             image:"/images/image/explore-more/explore-more1.png",
             title:"Walking On Air # 22",
@@ -93,6 +93,6 @@
             ]
         }
 
-    ])
+    ]
 
 </script>

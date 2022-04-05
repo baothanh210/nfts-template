@@ -20,7 +20,7 @@
 </template>
 <script setup>
     import {ref,reactive} from 'vue'
-    const collectionImg = reactive([
+    const collectionImg = [
         {
             image:'/images/image/collection-week/collect1.png',
             name:"Boss Beauties",
@@ -68,5 +68,5 @@
             price:"32.22 ETH",
             tick:"checked"
         }
-    ])
+    ]
 </script>

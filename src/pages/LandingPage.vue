@@ -19,7 +19,7 @@
                     </div>
                     <!-- Nav -->
                     <nav class="font-sansPro font-semibold text-[17px]">
-                        <ul class=" menuMobile flex flex-col lg:flex-row items-center gap-12 -left-full w-0 lg:left-auto lg:w-auto fixed lg:relative duration-600 z-50 ">
+                        <ul class=" menuMobile flex flex-col lg:flex-row items-center gap-12 -left-full w-0 lg:left-auto lg:w-auto fixed lg:relative duration-600 z-50 h-screen lg:h-auto">
                             <button @click="isOpen" class="lg:hidden w-7 h-7 ml-auto mr-3 mt-6">
                                 <img src="/images/icons/icon-close-menu.svg" alt="" class="object-cover">
                             </button>
@@ -28,7 +28,7 @@
                                     {{link}}
                                 </a>
                             </li>
-                            <div class="flex items-center gap-4 md:gap-9 lg:pl-60 ">
+                            <div class="flex-1 flex items-center gap-4 md:gap-9 lg:pl-60 ">
                                 <div class=" bg-[#404040] rounded-md">
                                     <a href="" class="flex items-center text-white flex items-center gap-2 py-4 px-4 md:px-9 ">
                                         <img src="/images/icons/icon-upload.svg" alt="">
@@ -272,18 +272,18 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper";
 const modules = [EffectCards]
-const headingData = reactive({
+const headingData = {
     limited:'LIMITED TIME',
     heading:'Discover,Collect and Sell',
     headingHightLight:'NFT ASSETS',
     content:'Digital Marketplace For Crypto Collectibles And Non-Fungible Tokens. Buy, Sell, And Discover Exclusive Digital AssetsUnit of data stored on a digital ledger, called a blockchain'
-})
+}
 
-const linksHeader = reactive([
+const linksHeader = [
     'Explore',
     'Featured Art',
     'Activity'
-])
+]
 
 const isOpen = useIsOpen
 </script>

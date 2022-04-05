@@ -41,7 +41,7 @@
 
 <script setup>
     import {reactive} from 'vue'
-    const popularCollection = reactive([
+    const popularCollection = [
         {
             avatar:"/images/image/popular-collection/img-popular1.png",
             name:"Hash masks",
@@ -75,5 +75,5 @@
             image3:"/images/image/popular-collection/img2-popular5.png",
             title:"Artistic collection"
         }
-    ])
+    ]
 </script>
