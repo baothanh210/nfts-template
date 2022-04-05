@@ -13,14 +13,14 @@
                             <span class="text-[26px] font-semibold">Nfts</span>
                         </a>
 
-                        <button @click="isOpen" class="lg:hidden w-7 h-7">
+                        <button @click="onToggleMenu" class="lg:hidden w-7 h-7">
                             <img src="/images/icons/menu-btn.svg" alt="" class="object-cover">
                         </button>
                     </div>
                     <!-- Nav -->
-                    <nav class="font-sansPro font-semibold text-[17px]">
-                        <ul class=" menuMobile flex flex-col lg:flex-row items-center gap-12 -left-full w-0 lg:left-auto lg:w-auto fixed lg:relative duration-600 z-50 h-screen lg:h-auto">
-                            <button @click="isOpen" class="lg:hidden w-7 h-7 ml-auto mr-3 mt-6">
+                    <nav  class="font-sansPro font-semibold text-[17px]">
+                        <ul :class="[active ? 'left-0 w-full top-0' : '-left-full w-0 top-0']" class=" flex flex-col lg:flex-row items-center gap-12 - lg:left-auto lg:w-auto fixed lg:relative duration-600 z-50 h-screen lg:h-auto bg-gray-200 lg:bg-transparent">
+                            <button @click="onToggleMenu" class="lg:hidden w-7 h-7 ml-auto mr-3 mt-6">
                                 <img src="/images/icons/icon-close-menu.svg" alt="" class="object-cover">
                             </button>
                             <li v-for="(link,index) in linksHeader" :key="index">
@@ -256,7 +256,7 @@
 
 <script setup>
 import { reactive } from 'vue'
-import {useIsOpen} from '../composables/mobileMenu'
+import useHandleMenu from '../composables/useHandleMenu'
 // Import Swiper Vue.js components
 import bannerImg from '../components/Banner.vue'
 import collectionItem from '../components/Collection.vue'
@@ -284,8 +284,7 @@ const linksHeader = [
     'Featured Art',
     'Activity'
 ]
-
-const isOpen = useIsOpen
+const {active,onToggleMenu} = useHandleMenu()
 </script>
 <style lang="scss">
     @import '../assets/scss/style';
